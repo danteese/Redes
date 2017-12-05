@@ -9,6 +9,7 @@ no shutdown
 exit
 # interface 1/0 - INSIDE
 interface GigabitEthernet1
+nameif outside
 security-level 100
 ip address 10.10.20.254 255.255.255.0
 no shutdown
