@@ -5,20 +5,20 @@ interface GigabitEthernet0
 nameif outside
 security-level 0
 ip address 10.10.40.254 255.255.255.0
-no su
+no shutdown
 exit
 # interface 1/0 - INSIDE
 interface GigabitEthernet1
 security-level 100
 ip address 10.10.20.254 255.255.255.0
-no su
+no shutdown
 exit
 # interface DMZ
 interface GigabitEthernet2
 nameif dmz
 security-level 50
 ip address 10.10.30.254 255.255.255.0
-no su
+no shutdown
 exit
 # Configurar ruta por default de salida
 route outside 0.0.0.0 0.0.0.0 10.10.40.254
