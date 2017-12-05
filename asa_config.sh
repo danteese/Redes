@@ -30,7 +30,7 @@ nat (inside,outside) dynamic interface
 exit
 # Configurar NAT de salida para servidores
 object network dmz-subnet
-subnet 10.10.40.0 255.255.255.0
+subnet 10.10.30.0 255.255.255.0
 nat (dmz,outside) dynamic interface
 
 # DHCP
