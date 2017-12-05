@@ -1,20 +1,20 @@
 # ASA ROUTER
 config t
 # interface 0/0 - OUTSIDE
-interface e0/0
+interface GigabitEthernet0
 nameif outside
 security-level 0
 ip address 10.10.40.254 255.255.255.0
 no su
 exit
 # interface 1/0 - INSIDE
-interface e1/0
+interface GigabitEthernet1
 security-level 100
 ip address 10.10.20.254 255.255.255.0
 no su
 exit
 # interface DMZ
-interface e2/0
+interface GigabitEthernet2
 nameif dmz
 security-level 50
 ip address 10.10.30.254 255.255.255.0
