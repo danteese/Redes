@@ -29,7 +29,7 @@ subnet 10.10.20.0 255.255.255.0
 nat (inside,outside) dynamic interface
 exit
 # Configurar NAT de salida para servidores
-object newtork dmz-subnet
+object network dmz-subnet
 subnet 10.10.40.0 255.255.255.0
 nat (dmz,outside) synamic interface
 
